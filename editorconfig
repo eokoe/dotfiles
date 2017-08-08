@@ -1,0 +1,43 @@
+# EditorConfig is awesome: http://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+max_line_length = 100
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+
+[*.coffee]
+indent_style = space
+indent_size = 2
+max_line_length = 100
+
+
+[*.{rb, erb}]
+indent_style = space
+indent_size = 2
+max_line_length = 120
+
+
+[*.yml]
+indent_style = space
+indent_size = 2
+
+[*.md]
+trim_trailing_whitespace = false
+
+[Makefile, makefile]
+charset = utf-8
+indent_style = tab
+indent_size = 2
+max_line_length = 100
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+
