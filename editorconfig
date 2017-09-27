@@ -1,43 +1,53 @@
 # EditorConfig is awesome: http://EditorConfig.org
 
-# top-most EditorConfig file
 root = true
-
 
 [*]
 charset = utf-8
 indent_style = space
 indent_size = 2
-max_line_length = 100
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-
+# Coffee Script
 [*.coffee]
 indent_style = space
 indent_size = 2
-max_line_length = 100
 
-
+# Ruby
 [*.{rb, erb}]
 indent_style = space
 indent_size = 2
-max_line_length = 120
 
+# Crystal
+[*.cr]
+indent_style = space
+indent_size = 2
 
+# Shellscript
+[*.sh]
+indent_style = tab
+
+# YAML
 [*.yml]
 indent_style = space
 indent_size = 2
 
-[*.md]
+# Markdown
+[*.{md, markdown}]
 trim_trailing_whitespace = false
 
-[Makefile, makefile]
+# Perl 6
+[*.{p6,pl6,pm,pm6,t}]
 charset = utf-8
-indent_style = tab
+indent_style = space
 indent_size = 2
-max_line_length = 100
-trim_trailing_whitespace = true
-insert_final_newline = true
 
+# Makefile
+[Makefile, makefile]
+indent_style = tab
 
+# package.json or .travis.yml
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2
